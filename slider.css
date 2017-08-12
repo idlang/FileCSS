@@ -1,0 +1,46 @@
+#slides li:nth-child(3),#slides li:nth-child(5){left:75%;width:25%;height:50%}
+#featuredpost{margin:15px auto;width:100%;position: relative;}
+#slides *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+#slides li,#slides ul{padding:0;margin:0;list-style:none;position:relative}
+#slides ul{height:350px}
+#slides li{width:50%;height:100%;position:absolute;display:none}
+#slides li:nth-child(1),#slides li:nth-child(2),#slides li:nth-child(3),#slides li:nth-child(4),#slides li:nth-child(5){display:block}
+#slides li:nth-child(1){left:0;top:0}
+#slides li:nth-child(2){left:50%;width:25%;height:50%}
+#slides li:nth-child(4){left:50%;top:50%;width:25%;height:50%}
+#slides li:nth-child(5){top:50%}
+#slides li:nth-child(1) h4{overflow:hidden;font-size:20px;bottom:0;color:#fafafa;width:100%;padding:10px 10px 10px 90px;text-align:left;background:rgba(0,0,0,.3);height:90px;text-shadow:2px 2px 0 rgba(0,0,0,.2);line-height:1.1;left:0}
+#slides li:nth-child(1) .label_text{font-size:30px;display:block;bottom:10px;left:10px;padding:0;box-shadow:5px 3px 0 rgba(0,0,0,.2)}
+#slides li:nth-child(1) span.dd{display:block;font-size:30px;padding:12px 15px;background:#4285f4;margin:0}
+#slides li:nth-child(1) span.dm{display:block;font-size:14px;background:#333;color:#fff;padding:5px 21px;text-transform:uppercase;margin:0}
+#slides li:nth-child(1) span.autname,#slides li:nth-child(1) span.dy{display:none}
+#slides a,#slides img{display:block;width:100%}
+#slides a{height:100%;overflow:hidden}
+#slides img{height:100%;border:0;padding:0;background-color:#333;-moz-transform:scale(1) rotate(0);-webkit-transform:scale(1) rotate(0);-ms-transform:scale(1) rotate(0);transform:scale(1) rotate(0);transition:all .6s linear}
+#slides li:nth-child(1) .overlayx,#slides li:nth-child(2) .autname,#slides li:nth-child(3) .autname,#slides li:nth-child(4) .autname,#slides li:nth-child(5) .autname{display:none}
+#slides li a:hover img{-moz-transform:scale(1.1) rotate(1deg);-webkit-transform:scale(1.1) rotate(1deg);-ms-transform:scale(1.1) rotate(1deg);transform:scale(1.1) rotate(1deg);transition:all .3s linear}
+#slides .overlayx{width:100%;height:100%;position:absolute;z-index:2;background-image:url(http://2.bp.blogspot.com/-0haO2Mfkjjk/VDgZww2tfEI/AAAAAAAAHAk/zhu3INYSkHA/s1600/fade.png);background-position:50% 40%;background-repeat:repeat-x}
+#slides .label_text,#slides h4{z-index:3;left:10px;position:absolute;}
+#slides h4{bottom:40px;margin:0 10px 0 0;font-size:13px;padding:5px 10px;color:#f9f9f9;line-height:1.1;font-weight:400;background:rgba(41,41,41,.7);text-align:left}
+#slides .label_text{font-size:12px;color:#fff;bottom:10px;background:#4285f4;padding:3px 6px}
+#slides .overlayx,#slides li{transition:all .4s ease-in-out}
+#slides li:hover .overlayx{opacity:.1}
+#featuredpost.loadingxx{background: url(https://2.bp.blogspot.com/-j5_B6uRRf_I/WUnnQw-tddI/AAAAAAAArpQ/tN7vxuosXf0w2g4qOHqH6UD02hi-al-uACLcBGAs/s1600/loadingbox.gif) no-repeat 50% 50%;}
+#buttons{opacity:0;transition:all .4s ease-in-out}
+#featuredpost:hover #buttons{opacity:.7}
+#nextx,#prevx{position:absolute;top:0;bottom:0;width:60px}
+#prevx{left:0;background:url("https://4.bp.blogspot.com/-ZQB4gdDffz8/WWrzkJ1QceI/AAAAAAAAr2U/GANOfBvKSE0QY9S3jHroeylebqq6wRaJQCLcBGAs/s1600/code-less-than.png") center no-repeat;background-size:50px 50px}
+#nextx{right:50%;background:url("https://2.bp.blogspot.com/-64GKW6NEjcM/WWrzkROR2jI/AAAAAAAAr2Y/ufjUCKpoks0GFTQGiLw9QkvbvqdxTYpFQCLcBGAs/s1600/code-greater-than.png") center no-repeat;background-size:50px 50px}
+@media only screen and (max-width:1024px){#slides ul{height:320px}
+}
+@media only screen and (max-width:800px){#slides li:nth-child(1) h4{font-size:18px;}
+}
+@media only screen and (max-width:640px){#slides ul{overflow:hidden}
+#slides li:nth-child(1){width:100%;height:100%}
+#slides li:nth-child(2),#slides li:nth-child(3),#slides li:nth-child(4),#slides li:nth-child(5){top:0;left:100%;height:100%}
+#nextx{right:0;}
+}
+@media only screen and (max-width:480px){#slides ul{height:200px}
+#slides li:nth-child(1) h4{font-size:13px;}
+#nextx, #prevx{bottom:50%}
+}
